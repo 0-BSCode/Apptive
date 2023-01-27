@@ -1,3 +1,4 @@
+import Navbar from "@layouts/navbar";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import React, {
@@ -21,7 +22,12 @@ const authenticated = (Page: FunctionComponent) =>
       redirect();
     }, [session]);
 
-    return <Page />;
+    return (
+      <>
+        <Navbar />
+        <Page />
+      </>
+    );
   };
 
 export default authenticated;
