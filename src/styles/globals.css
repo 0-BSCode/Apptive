@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        @apply text-[16px]
+    }
+
+    html {
+        font-family: 'Poppins', monospace
+    }
+
+    button {
+        color: white;
+    }
+}
+
+@layer components {
+    .cdrop-shadow {
+        @apply drop-shadow-[0_0.3rem_0.2rem_rgba(99,60,247,0.25)]
+    }
+}
+
+@layer utilities {
+    .bg-gradient--purple {
+        @apply bg-gradient-to-l from-cPurple-100 to-cPurple-200
+    }
+}

@@ -11,7 +11,12 @@ module.exports = {
       "2xl": "1280px",
       "3xl": "1440px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        "cPurple-100": "#8743FF",
+        "cPurple-200": "#4136F1",
+      },
+    },
   },
   plugins: [],
 };
